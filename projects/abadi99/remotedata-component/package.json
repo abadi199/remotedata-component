@@ -1,6 +1,14 @@
 {
-  "name": "@abadi99/remotedata-component",
+  "name": "@abadi99/ng-remotedata",
   "version": "0.0.1",
+  "description": "NG Component for rendering RemoteData",
+  "author": "Abadi Kurniawan",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abadi199/remotedata-component.git"
+  },
+  "homepage": "https://github.com/abadi199/remotedata-component",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
