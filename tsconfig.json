@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@abadi99/remotedata-component": [
+        "dist/abadi99/remotedata-component"
+      ],
+      "@abadi99/remotedata-component/*": [
+        "dist/abadi99/remotedata-component/*"
+      ]
+    }
   }
 }

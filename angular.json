@@ -126,6 +126,46 @@
           }
         }
       }
+    },
+    "abadi99-remotedata-component": {
+      "root": "projects/abadi99/remotedata-component",
+      "sourceRoot": "projects/abadi99/remotedata-component/src",
+      "projectType": "library",
+      "prefix": "rd",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/abadi99/remotedata-component/tsconfig.lib.json",
+            "project": "projects/abadi99/remotedata-component/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/abadi99/remotedata-component/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/abadi99/remotedata-component/src/test.ts",
+            "tsConfig": "projects/abadi99/remotedata-component/tsconfig.spec.json",
+            "karmaConfig": "projects/abadi99/remotedata-component/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/abadi99/remotedata-component/tsconfig.lib.json",
+              "projects/abadi99/remotedata-component/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "remotedata-component"
